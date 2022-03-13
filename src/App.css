@@ -55,21 +55,27 @@
 }
 .cta-button {
   height: 45px;
-  border: 0;
   width: auto;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 0px;
-  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   color: white;
+  border: 0;
+  cursor: pointer;
 }
 
 .connect-wallet-button {
   background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  border: 0;
+  cursor: pointer;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-size: 1.2rem;
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
+  box-shadow: 1px 1px 50px rgba(149, 255, 28, 0.2);
 }
 
 .submit-gif-button {
