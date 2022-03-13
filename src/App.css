@@ -1,12 +1,14 @@
+* {
+  box-sizing: border-box;
+}
 .App {
-  height: 100vh;
-  background-color: #1a202c;
-  overflow: scroll;
+  background-color: #000000;
   text-align: center;
+  height: 100vh;
 }
 
 .container {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,22 +16,22 @@
 }
 
 .authed-container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 30px;
+  background-color: black;
 }
 
 .header {
   margin: 0;
   font-size: 50px;
   font-weight: bold;
-  color: white;
+  color: rgb(139, 139, 139);
 }
 
 .sub-text {
-  font-size: 25px;
-  color: white;
+  font-size: 18px;
+  color: rgb(139, 139, 139);
 }
 
 .gradient-text {
@@ -38,14 +40,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.header_address {
+  margin: auto;
+  display: inline-block;
+}
+.header_address .address {
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  background: -webkit-linear-gradient(left, #0c2b0a, #003947);
+  border-radius: 50px;
+}
 .cta-button {
   height: 45px;
   border: 0;
   width: auto;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 10px;
+  border-radius: 0px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
@@ -59,10 +73,11 @@
 }
 
 .submit-gif-button {
-  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+  background: -webkit-linear-gradient(left, #adadad, #575757);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
-  margin-left: 10px;
+  color: #000000;
+  margin-left: -10px;
 }
 
 .footer-container {
@@ -70,27 +85,28 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 100%;
-  bottom: 0;
+  top: 0;
   left: 0;
-  padding-bottom: 45px;
+  padding-top: 25px;
+  padding-left: 20px;
 }
 
 .twitter-logo {
-  width: 35px;
-  height: 35px;
+  width: 15px;
+  height: 15px;
+  filter: grayscale(100);
 }
 
 .footer-text {
-  color: white;
-  font-size: 16px;
+  color: rgb(139, 139, 139);
+  font-size: 12px;
   font-weight: bold;
 }
 
 .gif-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5rem;
   justify-items: center;
   margin: 0;
   padding: 0;
@@ -111,20 +127,20 @@
   object-fit: cover;
 }
 
-.connected-container input[type='text'] {
+.connected-container input[type="text"] {
   display: inline-block;
   color: white;
-  padding: 10px;
+  padding: 0 22px;
   width: 50%;
   height: 60px;
   font-size: 16px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.25);
-  border: none;
-  border-radius: 10px;
-  margin: 50px auto;
+  background-color: rgba(80, 80, 80, 0.25);
+  border: 0px solid rgb(83, 83, 83);
+  margin: 20px auto;
+  margin-right: 0;
 }
 
 .connected-container button {
-  height: 50px;
+  height: 55px;
 }
